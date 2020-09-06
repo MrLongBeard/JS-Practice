@@ -57,5 +57,26 @@ function outerFunction(outerVariable){
 const newFuntion = outerFunction('outside')
 newFuntion('inside')
 //result
-//outside~
+//outside
 //inside
+
+// counter clock example
+var add = (()=>{
+    var counter = 0;
+    return ()=>{counter+=1; return counter}
+})()
+console.log(add())
+console.log(add())
+console.log(add())
+//counter clock example another way
+var plus = ()=>{
+    var counter=0;
+    return ()=>{
+        counter+=1;
+        return counter
+    }
+}
+var myCounter=plus()
+console.log(myCounter())
+console.log(myCounter())
+console.log(myCounter())
