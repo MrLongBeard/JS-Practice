@@ -8,7 +8,7 @@ let printFullName = function (hometown, state){
 }
 
 let print = printFullName.bind(name,"karachi")
-print("sindh");
+print("sindh","Pakistan");
 
 Function.prototype.myBind = function (...args){
     let obj = this;
