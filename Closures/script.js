@@ -80,3 +80,13 @@ var myCounter=plus()
 console.log(myCounter())
 console.log(myCounter())
 console.log(myCounter())
+
+
+//The Hard Parts: Functional Programming Fundamentals
+//currying
+//partial application 
+//function decoration techniques
+//if Hemingway wrote javascript
+//helper functions
+//Iterators and generators
+//module patterns

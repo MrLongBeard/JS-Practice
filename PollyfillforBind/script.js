@@ -20,3 +20,12 @@ Function.prototype.myBind = function (...args){
 
 let printBind = printFullName.myBind(name,"karachi")
 printBind("sindh");
+
+
+Function.prototype.myBind2 = function (...args){
+    let obj = this;
+    params = args.slice(1)
+    return function (...args2) {
+        obj.apply(args[0],[...params,...args2])
+    }
+}
